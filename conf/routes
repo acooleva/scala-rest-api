@@ -1,0 +1,10 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+
+# Person resource
+# ---------------
+GET     /car-adverts                controllers.CarAdvertController.readAll
+GET     /car-advert/:advertId       controllers.CarAdvertController.read(advertId: java.util.UUID)
+DELETE  /car-advert/:advertId       controllers.CarAdvertController.delete(advertId: java.util.UUID)
+PUT     /car-advert/:advertId       controllers.CarAdvertController.update(advertId: java.util.UUID)
+POST    /car-advert                 controllers.CarAdvertController.create
